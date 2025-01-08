@@ -1,0 +1,56 @@
+header {
+    display: block; /* Cambia a block para apilar las secciones */
+    width: 100%;
+}
+
+.section-1 {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: blue; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 3rem;
+}
+
+.section-2 {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: red;
+    height: 5rem;
+}
+
+.section-3 {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: black; /* Agrega un color de fondo a la sección 3 */
+    height: 3rem;
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center; 
+        }
+    
+        nav li {
+            margin-right: 20px; 
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: #333; 
+        }
+    }
+
+
+
+
+main {
+    background-color: green;
+    height: 200rem;
+}
+
+footer {
+    background-color: orange;
+    height: 25rem;
+}
