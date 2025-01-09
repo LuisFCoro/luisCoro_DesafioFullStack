@@ -88,10 +88,25 @@ En la creación de **Espacio Industria**, me inspire en las mejores prácticas d
 - **[Dogo](https://www.dogo.com.ar):**  
   Su enfoque en soluciones prácticas y accesibles para clientes de todos los perfiles fue clave para nuestra misión de atender tanto a profesionales como a consumidores finales.  
 
----
-
 💡 **Estos referentes nos ayudaron a dar forma a Espacio Industria, combinando funcionalidad, diseño y atención al cliente para ofrecerte la mejor experiencia posible.**  
 
+
+# ✅ Cosas a Tener en Cuenta  
+
+| **Principio**                  | **Descripción**                                                                                           |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 🚫 **Evitar el desplazamiento excesivo** | Mostrar la información clave en la primera pantalla para reducir la necesidad de scroll y evitar fatiga del usuario. |
+| 🧭 **Navegación visible y accesible**    | Un menú siempre visible que facilite el acceso rápido y evite clics innecesarios.                        |
+| 🕊 **Uso del espacio blanco**            | Diseños limpios y no saturados que mejoren la legibilidad y faciliten el procesamiento de la información. |
+| 🎨 **Consistencia visual**              | Mantener uniformidad en colores, fuentes y estilos para generar confianza y familiaridad.               |
+| ⚡ **Tiempo de carga rápido**            | Optimizar imágenes y archivos para garantizar que las páginas carguen en pocos segundos.                 |
+| 📱 **Diseño móvil primero**              | Priorizar un diseño responsive y funcional en dispositivos móviles, donde navega la mayoría de los usuarios. |
+| ♿ **Accesibilidad para todos**          | Asegurar contraste, texto alternativo en imágenes y compatibilidad con lectores de pantalla.             |
+| 👁️ **Jerarquía visual clara**           | Destacar información importante con tamaños, colores y patrones como la "F" o la "Z".                    |
+| 🖱️ **Llamados a la acción efectivos**    | Crear botones claros y visibles que guíen al usuario, como “Compra ahora” o “Contáctanos”.               |
+| 🛑 **Evitar distracciones**              | Diseños simples y funcionales que prioricen el contenido clave y eliminen elementos innecesarios.         |
+
+💡 **Estos principios son fundamentales para garantizar que Espacio Industria sea funcional, accesible y fácil de usar para todos.**  
 
 
 **¡Gracias por confiar en nosotros!**  
