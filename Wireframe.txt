@@ -8,3 +8,5 @@ del proyecto.
 
 Actualmente mi proyecto está actualmente en desarrollo. Es posible que algunas funcionalidades no estén completas o presenten cambios 
 frecuentes.Agradezco su comprensión y paciencia mientras trabajo para entregar una versión final de calidad.
+
+---> https://www.figma.com/design/0rIVF5Ztztdf05QnGYYeJz/Untitled?node-id=0-1&t=wjDKA1mnAVjEDIvo-1
