@@ -3,13 +3,12 @@ main {
     height: 50rem;
 }
 
-/* Top Banner */
 .top-banner img {
     width: 100%;
     height: auto;
 }
 
-/* Promotions */
+
 .promotions {
     display: flex;
     justify-content: space-around;
@@ -23,14 +22,14 @@ main {
     object-fit: contain;
 }
 
-/* Main Banner */
+
 .main-banner img {
     width: 100%;
     height: auto;
     margin: 20px 0;
 }
 
-/* Offers Section */
+
 .offers {
     padding: 20px;
     background-color: #fff;
