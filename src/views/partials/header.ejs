@@ -1,0 +1,65 @@
+<header>
+    <div class="section-1">
+        <span class="text">Venta telefónica</span>
+        <a href="https://wa.me/1128656432" target="_blank">
+            <span class="phone-number">0800-220-0010</span>
+            <span class="text"><strong>o chateá por</strong></span>
+            <img src="/img/WhatsApp.png" alt="Chatea por WhatsApp" class="chat-icon"> 
+        </a>
+    </div>
+    <div class="section-2">
+        <nav>
+            <ul>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>Contactenos</a></li>
+                <li><a href="#"><i class="fas fa-truck"></i>Seguir tu compra</a></li>
+                <li><a href="#"><i class="fas fa-headphones"></i>VENTA TELEFONICA <strong>0800-220-0010</strong></a></li>
+                <li><a href="#"><i class="fas fa-store"></i>Sucursales</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section-3">
+        <a href="/" class="logo"> 
+            <img src="/img/logoEmpresa.png" alt="Logo"> 
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="¿Qué estás buscando?">
+        </div>
+        <div class="user-actions">
+            <a href="/auth/login" class="account">
+                <i class="fas fa-user"></i> Mi cuenta
+            </a>
+            <a href="/src/views/productCartl.html" class="cart">
+                <i class="fas fa-shopping-cart"></i> Mi carrito
+            </a>
+            <a href="#" class="wishlist" id="wishlist">
+                <i class="fas fa-heart"></i>
+            </a>
+
+            <!-- Menú de usuario -->
+            <div class="user-menu" id="user-menu">
+                <div class="profile-section">
+                    <img src="/img/default-profile.png" alt="Foto de perfil" class="profile-pic">
+                    <% if (typeof user !== 'undefined' && user) { %>
+                        <p class="username"><%= user.name %></p> <!-- Muestra el nombre del usuario -->
+                    <% } else { %>
+                        <p class="username">Invitado</p> <!-- Muestra "Invitado" si no hay usuario -->
+                    <% } %>
+                </div>
+                <ul>
+                    <% if (user) { %>
+                        <li><a href="/perfil">Editar perfil</a></li>
+                        <li><a href="/auth/logout">Cerrar sesión</a></li>
+                    <% } else { %>
+                        <li><a href="/auth/register">Crear cuenta</a></li>
+                        <li><a href="/auth/login">Iniciar sesión</a></li>
+                        <li><a href="/auth/login">Mis productos</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vincular el archivo JavaScript -->
+    <script src="/js/perfil.js"></script>
+</header>

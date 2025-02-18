@@ -1,19 +1,11 @@
 {
-  "name": "proyectointegradorff",
-  "version": "1.0.0",
-  "description": "**Tu Aliado en Herramientas e Insumos Industriales**",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
   }
 }

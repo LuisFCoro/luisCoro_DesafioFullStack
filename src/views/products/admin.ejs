@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- (/partials/header.css) %>
+    <div class="encabezado">
+        <h1 class="titulo">Productos</h1>
+        <nav class="menu">
+            <a href="#" class="boton">
+                <i class="fas fa-plus"></i> <span>Crear</span>
+            </a>
+            <a href="#" class="boton">
+                <i class="fas fa-edit"></i> <span>Editar</span>
+            </a>
+            <a href="#" class="boton">
+                <i class="fas fa-trash"></i> <span>Eliminar</span>
+            </a>
+        </nav>
+    </div>
+    <main class="contenido">
+        <div class="producto">
+            <img src="https://via.placeholder.com/80" alt="Producto 1" class="imagen">
+            <h2 class="nombre">Producto 1</h2>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/80" alt="Producto 2" class="imagen">
+            <h2 class="nombre">Producto 2</h2>
+        </div>
+        <div class="producto">
+            <img src="https://via.placeholder.com/80" alt="Producto 3" class="imagen">
+            <h2 class="nombre">Producto 3</h2>
+        </div>
+    </main>
+    <%- (/partials/footer.css) %>
+</body>
+</html>

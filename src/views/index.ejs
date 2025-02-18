@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+
+<%- include('partials/header') %>
+
+<body>
+    
+    <main>
+        <div class="top-banner">
+            <img src="/img/img-carrusel.jpg" alt="Top Banner">
+        </div>
+    
+        <div class="promotions">
+            <div class="promo-item">
+                <img src="/img/img-cuotas.jpg" alt="Envíos a todo el país">
+            </div>
+            <div class="promo-item">
+                <img src="/img/img-envios.jpg" alt="Hasta 6 cuotas">
+            </div>
+            <div class="promo-item">
+                <img src="/img/envio-retiro.jpg" alt="Clientes corporativos">
+            </div>
+            <div class="promo-item">
+                <img src="/img/img-cuotas.jpg" alt="Retiro gratis">
+            </div>
+        </div>
+        <section class="offers">
+            <h2 class="offers-title">Ofertas</h2>
+            <div class="product-grid">
+                <a href="/src/views/productDetail.html" class="product-card">
+                    <img src="/img/img3.jpg" alt="Producto 1">
+                    <p class="product-price">$50,000.000</p>
+                    <p class="product-promo">Lista <span class="highlight-price">$55,000.000</span></p>
+                    <p class="product-info">Llega gratis mañana</p>
+                </a>
+                <a href="/src/views/productDetail.html" class="product-card">
+                    <img src="/img/img3.jpg" alt="Producto 2">
+                    <p class="product-price">$50,000.000</p>
+                    <p class="product-promo">Lista <span class="highlight-price">$55,000.000</span></p>
+                    <p class="product-info">Llega gratis mañana</p>
+                </a>
+                <a href="/src/views/productDetail.html" class="product-card">
+                    <img src="/img/img3.jpg" alt="Producto 3">
+                    <p class="product-price">$50,000.000</p>
+                    <p class="product-promo">Lista <span class="highlight-price">$55,000.000</span></p>
+                    <p class="product-info">Llega gratis mañana</p>
+                </a>
+                <a href="/src/views/productDetail.html" class="product-card">
+                    <img src="/img/img3.jpg" alt="Producto 4">
+                    <p class="product-price">$50,000.000</p>
+                    <p class="product-promo">Lista <span class="highlight-price">$55,000.000</span></p>
+                    <p class="product-info">Llega gratis mañana</p>
+                </a>
+            </div>
+            
+            </div>
+        </section>
+    
+        <section class="categories">
+            <div class="category-card">
+                <img src="/img/cat1.png" alt="Categoría 1">
+            </div>
+            <div class="category-card">
+                <img src="/img/cat2.webp" alt="Categoría 2">
+            </div>
+            <div class="category-card">
+                <img src="/img/cat3.jpg" alt="Categoría 3">
+            </div>
+            <div class="category-card">
+                <img src="/img/cat4.webp" alt="Categoría 4">
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+    
+</body>
+</html>

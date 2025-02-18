@@ -1,6 +1,198 @@
+*{
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    display: block; 
+    width: 100%;
+}
+
+/* Section-1----------------------------*/
+
+.section-1 {
+    width: 100%; 
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 2.8rem;
+    gap:1rem;
+    font-size: 19px; 
+}
+
+.section-1 a {
+    text-decoration: none;
+}
+
+.phone-number {
+    margin-right: 10px;
+    color: white;
+}
+
+.phone-number {
+    margin-right: 10px;
+    background-color: #F56207; 
+    transition: background-color 0.3s ease; 
+    border-radius: 30px;
+    border: 2px solid #F56207; 
+    padding: 2px 14px;
+    font-size: 18px;
+}
+
+.phone-number:hover {
+    background-color: transparent;
+    color:#F56207;
+}
+
+.text {
+    margin-left: -3px;
+    color: rgb(0, 0, 0);
+
+}
+
+.chat-icon{
+    width: 1.5rem;
+    height: 1.2em; 
+    vertical-align: middle; 
+    margin-left: 0.3rem;
+    margin-top: -0.1rem;
+}
+
+/* Section-2--------------------------*/
+
+
+.section-2 {
+    width: 100%; 
+    background-color:rgb(0, 0, 0);
+    height: 0rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px; 
+}
+
+.section-2 nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.section-2 nav li {
+    margin-left: 40px; 
+}
+
+.section-2 nav a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.section-2 nav i {
+    margin-right: 10px; 
+}
+
+/* Section-3-----------------------------*/
+
+.section-3 {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: rgb(0, 0, 0); /* Agrega un color de fondo a la sección 3 */
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+.logo { /* Estilos para el logo */
+    display: flex;
+    align-items: center; 
+    margin-top: -0.8rem;
+}
+
+.logo img {
+    height: 250px;  
+}
+
+.search-bar {
+    display: flex; /* Alinea los elementos dentro del contenedor */
+    justify-content: center; /* Centra el buscador horizontalmente */
+    margin-top: 20px; /* Espacio entre el buscador y el elemento superior */
+    padding: 0 16px; /* Espacio interno en los laterales */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    flex-grow: 1; /* El buscador ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    margin: 0 20px; /* Espacio horizontal entre el buscador y los otros elementos */
+    height: 2.2rem;
+}
+
+.search-bar input {
+    background-color: rgb(148, 146, 146);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color:black;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 2000px; /* Define un ancho máximo razonable */
+    min-width: 300px; /* Define un ancho mínimo */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho */
+}
+
+::placeholder { 
+    color: rgb(241, 236, 236);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre los íconos */
+}
+
+.user-actions a { /* Estilos para los enlaces de usuario */
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+    color: white;  /* Color de texto blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.user-actions i {
+    margin-right: 5px;
+    color: orange;
+    margin-right: 15px; /* Espacio entre el ícono y el texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main {
     background-color: green;
-    height: 50rem;
+
 }
 
 .top-banner img {
@@ -115,11 +307,178 @@ main {
 
 
 
+footer {
+    background-color: orange;
+    height: 28rem;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffa500;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffa500;
+  }
+  
+  .footer-section form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    padding: 5px;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-section button {
+    background-color: #ffa500;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer-section button:hover {
+    background-color: #ff8c00;
+  }
+  
+  .footer-section .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom .sap-logo {
+    width: 120px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .footer-bottom .payment-methods img {
+    width: 40px;
+    margin-left: 10px;
+  }
+.footer-logo{
+    width: 270px;
+    margin: 0;
+    margin-top: -6rem;
+}
+.logo-captcha{
+    margin-top: 1rem;
+}
 
 
 
 
 
+
+
+
+
+/* js */
+
+
+.user-actions {
+    position: relative; /* Esto es clave para posicionar el menú desplegable */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.user-menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 100%; /* Coloca el menú justo debajo del ícono del corazón */
+    right: 0; /* Alinea el menú a la derecha */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    min-width: 200px; /* Ancho mínimo del menú */
+}
+
+.user-menu.visible {
+    display: block; /* Mostrar el menú cuando tenga la clase "visible" */
+}
+
+.profile-section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.username {
+    margin: 0;
+    font-weight: bold;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.user-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
 
 
 
