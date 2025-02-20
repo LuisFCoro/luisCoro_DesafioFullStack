@@ -62,9 +62,8 @@ exports.register = (req, res) => {
 
 
 
-
-// Controlador para manejar el login de usuarios
 exports.login = (req, res) => {
+    console.log('Solicitud de login recibida:', req.body); // Depuración
     const { email, password } = req.body;
 
     // Validar que los campos estén presentes
@@ -86,8 +85,23 @@ exports.login = (req, res) => {
     if (bcrypt.compareSync(password, user.password)) {
         // Guardar el usuario en la sesión
         req.session.user = user;
+        console.log('Usuario autenticado:', user); // Depuración
         res.redirect('/perfil'); // Redirigir al perfil o a la página principal
     } else {
         res.status(400).send('Correo o contraseña incorrectos');
     }
+};
+
+
+
+
+
+exports.logout = (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            console.error('Error al cerrar sesión:', err);
+            return res.status(500).send('Error al cerrar sesión');
+        }
+        res.redirect('/login'); // Redirigir al login después de cerrar sesión
+    });
 };

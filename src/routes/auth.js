@@ -10,6 +10,10 @@ router.get('/register', (req, res) => {
 // Ruta para manejar el envío del formulario de registro
 router.post('/register', authController.register);
 
+router.get('/login', (req, res) => {
+    res.render('users/login'); // Asegúrate de que la ruta a la vista sea correcta
+});
+
 
 // Ruta para manejar el envío del formulario de login
 router.post('/login', authController.login);

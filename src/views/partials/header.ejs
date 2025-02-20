@@ -47,13 +47,12 @@
                     <% } %>
                 </div>
                 <ul>
-                    <% if (user) { %>
+                    <% if (typeof user !== 'undefined' && user) { %>
                         <li><a href="/perfil">Editar perfil</a></li>
                         <li><a href="/auth/logout">Cerrar sesión</a></li>
                     <% } else { %>
-                        <li><a href="/auth/register">Crear cuenta</a></li>
-                        <li><a href="/auth/login">Iniciar sesión</a></li>
-                        <li><a href="/auth/login">Mis productos</a></li>
+                        <li><a href="/login">Iniciar sesión</a></li>
+                        <li><a href="/register">Registrarse</a></li>
                     <% } %>
                 </ul>
             </div>
