@@ -1,3 +1,10 @@
+if (usuarioEncontrado && contraseñaCorrecta) {
+  req.session.userLogged = usuarioEncontrado;
+  res.redirect('/profile'); // o donde quieras
+} else {
+  res.send('Usuario o contraseña incorrectos');
+}
+
 const { User } = require('../models');
 
 module.exports = {

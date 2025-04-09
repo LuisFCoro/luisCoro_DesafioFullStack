@@ -1,51 +1,49 @@
-const { Product, Category } = require('../models');
+const db = require('../database/models');
 
 module.exports = {
-  list: async (req, res) => {
-    const products = await Product.findAll({ include: ['category'] });
-    res.render('products/list', { products });
+  index: async (req, res) => {
+    const products = await db.Product.findAll();
+    res.render('products/index', { products });
   },
 
   detail: async (req, res) => {
-    const product = await Product.findByPk(req.params.id, { include: ['category'] });
+    const product = await db.Product.findByPk(req.params.id);
     res.render('products/detail', { product });
   },
 
-  createForm: async (req, res) => {
-    const categories = await Category.findAll();
-    res.render('products/form', { categories });
+  createForm: (req, res) => {
+    res.render('products/create');
   },
 
-  create: async (req, res) => {
-    await Product.create(req.body);
+  store: async (req, res) => {
+    await db.Product.create({
+      name: req.body.name,
+      price: req.body.price,
+      description: req.body.description,
+      // y demás campos
+    });
     res.redirect('/products');
   },
 
   editForm: async (req, res) => {
-    const product = await Product.findByPk(req.params.id);
-    const categories = await Category.findAll();
-    res.render('products/form', { product, categories });
+    const product = await db.Product.findByPk(req.params.id);
+    res.render('products/edit', { product });
   },
 
   update: async (req, res) => {
-    await Product.update(req.body, {
-      where: { id: req.params.id }
-    });
+    await db.Product.update(
+      {
+        name: req.body.name,
+        price: req.body.price,
+        description: req.body.description,
+      },
+      { where: { id: req.params.id } }
+    );
     res.redirect('/products');
   },
 
-  delete: async (req, res) => {
-    await Product.destroy({ where: { id: req.params.id } });
+  destroy: async (req, res) => {
+    await db.Product.destroy({ where: { id: req.params.id } });
     res.redirect('/products');
   },
-
-  search: async (req, res) => {
-    const searchTerm = req.query.q;
-    const results = await Product.findAll({
-      where: {
-        name: { [Op.like]: `%${searchTerm}%` }
-      }
-    });
-    res.render('products/list', { products: results });
-  }
 };

@@ -38,3 +38,21 @@ app.listen(3000, () => {
 
 app.use('/products', require('./routes/products'));
 app.use('/users', require('./routes/users'));
+
+
+
+const session = require('express-session');
+
+app.use(session({
+  secret: 'supersecreto', // cambiá esto por algo más seguro
+  resave: false,
+  saveUninitialized: false
+}));
+
+
+
+app.use((req, res, next) => {
+    res.locals.user = req.session.userLogged || null;
+    next();
+  });
+  
