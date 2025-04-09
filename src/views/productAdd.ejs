@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <main class="crear-producto-container">
+        <div class="formulario">
+          <h2>Creacion de Producto</h2>
+          <form action="/productos/crear" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: nombre@gmail.com">
+      
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Ej: Descripcion">
+      
+            <label for="categoria">Categoría</label>
+            <input type="text" id="categoria" name="categoria" placeholder="Ej: Categoria">
+      
+            <div class="precio-stock">
+              <div>
+                <label for="precio">Precio</label>
+                <input type="text" id="precio" name="precio" placeholder="Ej: $1500">
+              </div>
+              <div>
+                <label for="stock">Stock</label>
+                <input type="text" id="stock" name="stock" placeholder="Ej: 5">
+              </div>
+            </div>
+      
+            <label for="imagen">Imagen</label>
+            <div class="imagen-upload">
+              <input type="text" id="imagen" placeholder="">
+              <button type="button" class="seleccionar-btn">Seleccionar</button>
+            </div>
+      
+            <button type="submit" class="crear-btn">Crear</button>
+          </form>
+        </div>
+      </main>
+      
+
+
+
+
+  <%- include('../partials/footer') %>
+
+
+</body>
+</html>
+
+

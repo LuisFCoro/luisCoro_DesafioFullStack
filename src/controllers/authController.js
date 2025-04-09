@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const fs = require('fs');
 const path = require('path');
 
+// ---------------- Configuración del archivo de usuarios ----------------
 // Ruta al archivo JSON de usuarios
 const usersFilePath = path.join(__dirname, '../data/users.json');
 
@@ -20,7 +21,7 @@ const writeUsers = (users) => {
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2), 'utf-8');
 };
 
-// Controlador para manejar el registro de usuarios
+// ---------------- Controlador de Registro ----------------
 exports.register = (req, res) => {
     const { name, email, password } = req.body;
 
@@ -58,10 +59,7 @@ exports.register = (req, res) => {
     res.redirect('/perfil');
 };
 
-
-
-
-
+// ---------------- Controlador de Login ----------------
 exports.login = (req, res) => {
     console.log('Solicitud de login recibida:', req.body); // Depuración
     const { email, password } = req.body;
@@ -92,10 +90,7 @@ exports.login = (req, res) => {
     }
 };
 
-
-
-
-
+// ---------------- Controlador de Logout ----------------
 exports.logout = (req, res) => {
     req.session.destroy((err) => {
         if (err) {

@@ -173,6 +173,63 @@ header {
 }
 
 
+.profile-pic-container {
+    width: 80px; /* Tamaño del marco */
+    height: 80px;
+    border-radius: 50%; /* Hace que sea circular */
+    overflow: hidden; /* Evita que la imagen sobresalga */
+    border: 3px solid orange; /* Borde decorativo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Fondo blanco para un mejor contraste */
+    margin-bottom: 8px; /* Espacio con el nombre del usuario */
+}
+
+.profile-pic {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se vea bien dentro del círculo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main {
     display: flex;

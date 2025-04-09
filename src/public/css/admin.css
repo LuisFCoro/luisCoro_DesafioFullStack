@@ -1,69 +1,69 @@
-.pagina {
-    background-color: #f3f3f3;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.encabezado {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.titulo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.menu {
-    display: flex;
-    gap: 10px;
-}
-
-.boton {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
-
-.boton:hover {
-    color: black;
-}
-
-.contenido {
-    max-width: 500px;
+.productos-container {
+    width: 80%;
     margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .productos-lista {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.producto {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  
+  .producto {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.imagen {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.nombre {
-    font-size: 16px;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .producto img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .producto-info {
+    flex-grow: 1;
+    padding: 0 10px;
+  }
+  
+  .nombre {
     font-weight: bold;
-}
+  }
+  
+  .precio {
+    color: #666;
+  }
+  
+  .marca {
+    color: #888;
+  }
+  
+  .acciones {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #aaa;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn.crear {
+    background-color: #ddd;
+    color: black;
+  }
+  

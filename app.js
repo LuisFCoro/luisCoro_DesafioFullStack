@@ -34,3 +34,7 @@ app.use('/auth', authRoutes); // Usar rutas de autenticación
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
+
+app.use('/products', require('./routes/products'));
+app.use('/users', require('./routes/users'));

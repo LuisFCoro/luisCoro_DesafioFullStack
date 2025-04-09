@@ -1,7 +1,7 @@
 <header>
     <div class="section-1">
         <span class="text">Venta telefónica</span>
-        <a href="https://wa.me/1128656432" target="_blank">
+        <a href="https://wa.me/1128656432" target="_blank"> <!-- Enlace a WhatsApp -->
             <span class="phone-number">0800-220-0010</span>
             <span class="text"><strong>o chateá por</strong></span>
             <img src="/img/WhatsApp.png" alt="Chatea por WhatsApp" class="chat-icon"> 
@@ -19,40 +19,55 @@
         </nav>
     </div>
     <div class="section-3">
+        <!-- Logo de la empresa -->
         <a href="/" class="logo"> 
             <img src="/img/logoEmpresa.png" alt="Logo"> 
         </a>
+        
+        <!-- Barra de búsqueda -->
         <div class="search-bar">
             <input type="text" placeholder="¿Qué estás buscando?">
         </div>
+        
         <div class="user-actions">
-            <a href="/auth/login" class="account">
+            <!-- Enlace a la cuenta del usuario -->
+            <a href="#" class="account">
                 <i class="fas fa-user"></i> Mi cuenta
             </a>
+            <!-- Enlace al carrito de compras -->
             <a href="/src/views/productCartl.html" class="cart">
                 <i class="fas fa-shopping-cart"></i> Mi carrito
             </a>
+            <!-- Botón de favoritos -->
             <a href="#" class="wishlist" id="wishlist">
-                <i class="fas fa-heart"></i>
+                <i class="fa-solid fa-gear"></i>
             </a>
 
             <!-- Menú de usuario -->
             <div class="user-menu" id="user-menu">
                 <div class="profile-section">
-                    <img src="/img/default-profile.png" alt="Foto de perfil" class="profile-pic">
+                    <!-- Contenedor circular -->
+                    <div class="profile-pic-container">
+                        <img src="/img/default-profile.png" alt="Foto de perfil" class="profile-pic">
+                    </div>
+                    
+                    <!-- Verifica si hay un usuario autenticado -->
                     <% if (typeof user !== 'undefined' && user) { %>
                         <p class="username"><%= user.name %></p> <!-- Muestra el nombre del usuario -->
                     <% } else { %>
-                        <p class="username">Invitado</p> <!-- Muestra "Invitado" si no hay usuario -->
+                        <p class="username">Invitado</p> <!-- Si no hay usuario, muestra "Invitado" -->
                     <% } %>
                 </div>
+                
                 <ul>
+                    <!-- Opciones del menú según el estado del usuario -->
                     <% if (typeof user !== 'undefined' && user) { %>
                         <li><a href="/perfil">Editar perfil</a></li>
                         <li><a href="/auth/logout">Cerrar sesión</a></li>
+                        <li><a href="/auth/admin">Mis productos</a></li>
                     <% } else { %>
-                        <li><a href="/login">Iniciar sesión</a></li>
-                        <li><a href="/register">Registrarse</a></li>
+                        <li><a href="/auth/login">Iniciar sesión</a></li>
+                        <li><a href="/auth/register">Registrarse</a></li>
                     <% } %>
                 </ul>
             </div>
